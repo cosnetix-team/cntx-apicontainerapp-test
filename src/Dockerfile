@@ -14,6 +14,5 @@ COPY . .
 
 # Expose the port that the app will run on
 EXPOSE 3100
-
 # Command to run the application using Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3100", "--workers", "4"]
